@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    
+    <!-- Barra de navegação -->
     <header>
         <h1><a href="index.html">Liga Geek </a></h1>
         <div id="navegador">
@@ -23,6 +23,45 @@
             </nav>
         </div>
     </header>
+    <!-- Fim da barra de navegação -->
+    <!-- Slide show -->
+    <main class="container">
+        <figure class="imgs">
+        <center><img class="mySlides"   src="img/banner-liga-geek.png" alt=""></center>
+        <center><img class="mySlides"   src="img/Marvel-Studios-MCU.png" alt=""></center>
+        <center><img class="mySlides"   src="img/Img_da_DC.png" alt=""></center>
+      </figure>
+    </main>
+      <!-- Fim do slide show -->
+
+      <!-- Inicio do footer -->
+
+      <footer>
+        &copy; 2023 - Todos os direitos reservados - 4M
+      </footer>
+
+      <!-- Fim do footer -->
 
 </body>
+<!-- Java Script -->
+<script>
+    /* Slide show */
+    var slideIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  /* Fim do slide show */
+  
+</script>
+
 </html>
