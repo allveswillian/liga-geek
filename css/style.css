@@ -1,15 +1,23 @@
+
+@font-face {
+    font-family:'meedori' ;
+    src: url("/fonts/meedori-sans-bold.ttf") format(truetype) ; 
+    font-weight: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-
+/* inicio do header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: black;
+    font-family: 'meedori' ;
 }
 
 h1 a{
@@ -20,4 +28,17 @@ h1 a{
 nav a{
     margin-right: 40px;
     color: white;
+}
+/* Fim do header */
+
+/* inicio do main */
+main{
+    background-color: #2a2b38;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
