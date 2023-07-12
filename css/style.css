@@ -30,6 +30,11 @@ nav a{
     margin-right: 40px;
     color: white;
 }
+
+nav a:hover{
+    color: red;
+}
+
 /* Fim do header */
 
 /* inicio do main */
@@ -37,9 +42,20 @@ main{
     background-color: #2a2b38;
 }
 
+section img{
+    width: 100%;
+}
+
+.noticias{
+    color: white;
+    /* padding: 20px; */
+    margin: 0;
+    
+}
+
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 100px;
 }
