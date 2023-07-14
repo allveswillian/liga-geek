@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:'meedori' ;
     src: url("/fonts/meedori-sans-bold.ttf") format(truetype) ; 
@@ -39,17 +38,13 @@ nav a:hover{
 }
 
 /* Fim do header */
-
 /* inicio do main */
 main{
     /* background-color: #2a2b38; */
     background-color: white;
 }
 
-section img{
-    width: 90%;
-    height: 900px;
-}
+
 
 .noticias{
     color: white;
