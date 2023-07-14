@@ -54,9 +54,8 @@ main{
 }
 
 /* INICIO FOOTER */
-
-h4{
-    font-family: 'meedori' ;
+footer{
+    font-family: 'meedori';
 }
 
 nav a{
