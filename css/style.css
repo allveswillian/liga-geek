@@ -115,6 +115,11 @@ a.nomehp-aranha{
     text-decoration: none;  
 }
 
+h2.card-nome-hm{
+    text-align: center;
+    font-family: 'meedori';
+}
+
 
 /* Fim do CSS da pagina da MARVEL */
 
@@ -122,6 +127,7 @@ a.nomehp-aranha{
 /* INICIO FOOTER */
 footer{
     font-family: 'meedori';
+    background-color: #000000;
 }
 
 nav a{
@@ -157,7 +163,9 @@ nav a:hover{
 }
 .main_footer          { background-color:#000000; color:#fff; font-size:1em; }
 .main_footer .content { float:left; width:80%; margin:0 10%; padding: 5em 0; }
-.container { float:left; width:100%; }
+.container { 
+    float:left; width:100%;
+}
 .colfooter { 
 
     width:100%; 
@@ -226,4 +234,11 @@ nav a:hover{
 }
 
 /* Fim do footer */
+
+@media (max-width:700px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+}
 
