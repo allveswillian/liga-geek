@@ -54,16 +54,70 @@ img{
     height: auto;
 }
 
-
-
-
-
 .noticias{
     color: white;
-    /* padding: 20px; */
+    padding: 10px 20px;
     margin: 0;
+    background-color: black;
+    font-family: 'meedori' ;
+} 
+
+/* Inicio do CSS da pagina da MARVEL */
+
+.all-personagem{
+    padding: 20px 15px;
+    font-family: 'meedori';
+}
+
+/*Essa parte edita  todas as cartas*/
+.container-card{
+    display: flex;
+}
+/*card*/
+.card{
+    width: 600px;
+    height: 460px;
+    margin: 30px 35px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(226, 2, 2, 0.358);
+    background-color: rgb(24, 24, 24);
+  
+}
+/*Quando passar em cima da carta*/
+.card:hover {
+    border: 1px solid rgb(210, 126, 126);
+    transform: scale(1.05);
+  }
+  /*animação da carta*/
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+/*card header*/
+.card header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
     
 }
+/*card img*/
+.card img{
+    min-width: 100%;
+    width: auto;
+    height: 100%; 
+}
+/*Texto da carta*/
+a.nomehp-aranha{
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;  
+}
+
+
+/* Fim do CSS da pagina da MARVEL */
+
 
 /* INICIO FOOTER */
 footer{
@@ -170,3 +224,6 @@ nav a:hover{
 @media (min-width:80em){
 .footer-arrow svg { height:90px; }
 }
+
+/* Fim do footer */
+
