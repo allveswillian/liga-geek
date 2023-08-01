@@ -58,9 +58,182 @@ img{
     color: white;
     padding: 10px 20px;
     margin: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-family: 'meedori' ;
+    margin-top: 1px;
 } 
+
+/*cardapio*/
+.section-cardapio          { background-color:#e3e3e3; }
+.section-cardapio .content 
+{ 
+    float:left; 
+    padding: 0.5em 0 0em 0;
+     
+}
+
+article.card { 
+  width: 550px; 
+  height: 400px; 
+  margin-left: 45px;
+  margin-bottom: 40px; 
+  position: relative; 
+  background-color: #000000;
+  font-family: 'open_sansregular';
+  color: #fff;
+  float: left;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 0.4s;
+  
+}
+
+.fundo-card img         { width:100%; height:100%; }  
+.fundo-card             { position: relative; opacity: 0.5; transition:0.8s; }
+.card:hover .fundo-card { opacity: 0.2; }
+
+
+.card a{ 
+  
+  color:#fff;
+  text-decoration:none;
+  transition:all 0.2s
+}
+.card .color-overlay {
+  background: rgba(64, 84, 94,0.5);
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.card .gradient-overlay {  
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+.card:hover{
+    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+}
+.card:hover .info {
+  opacity: 1;
+  bottom: 70px;
+}
+.card:hover .color-overlay {
+  background: rgba(64, 64, 70,0.8);
+}
+.card:hover .title-content{
+  margin-top:70px
+}
+.title-content {
+  text-align: center;
+  margin: 170px 0 0 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition:all 0.6s
+}
+.card:hover h3:after{
+ 
+  animation: changeLetter 0.3s 1 linear;
+  width: 100%;
+  height: 10px;
+}
+.card h3,h1 {
+  font-size: 1.9em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'open_sansregular';
+  margin-bottom: 0;
+  display:inline-block;
+}
+.card h3 a{  
+ 
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+  transition:all 0.2s
+}
+.card h3 a:hover{
+  text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
+}
+h3:after {
+  content: " ";
+  display: block; 
+  width: 100%;
+  height: 1px;
+  margin: 10px auto;
+  border: 0;
+  background: #F29456;
+  transition:all 0.2s
+}
+@keyframes changeLetter {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.intro {
+  width: 170px;
+  margin: 0 auto;
+  color: #ddd;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.intro a { color: #ddd }
+.intro a:hover{ text-decoration:underline }
+.info {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+  font-style: 16px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+  transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.info a{
+  display:block;
+  width:100px;
+  margin:15px auto;
+  background:#f29456;
+  color:#ffffff;
+  padding:3px 10px;
+  border-radius:50px;
+  font-size:0.9em
+}
+
+.info a:hover{ background: #36312B; color:#fff; }
+.info a:hover span{ filter: brightness(10); opacity:1}
+
+@media (max-width:768px){
+
+    .card:hover .title-content,.title-content{ margin-top:50px }
+    .card{ height:300px }
+    .card h3{ font-size:1.3em }
+    .intro{ font-size:0.8em }
+    .card:hover .info { bottom: 15px; }
+}
+
+/*cardapio*/
 
 /* Inicio do CSS da pagina da MARVEL */
 
