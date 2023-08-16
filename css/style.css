@@ -322,7 +322,126 @@ h2.card-nome-hm{
 
 /* CSS pagina dos herois */
 
+/*titulo*/
+.texto_top{
+  position: absolute;
+  top: 65%; /* Ajuste a posição vertical do texto conforme necessário */
+left: 14%; /* Ajuste a posição horizontal do texto conforme necessário */
+transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
+color: #fff; /* Cor do texto */
+font-size: 40px; /* Tamanho da fonte do texto */
+font-weight: bold;
+background-color:transparent;
+font-family: 'Roboto Condensed', sans-serif;
+}
+/*conteudo da imagem*/
+.texto-mid{
+  word-break: break-word;
+  box-sizing: border-box;
+  position: absolute;
+  top: 75%; /* Ajuste a posição vertical do texto conforme necessário */
+  left: 34%; /* Ajuste a posição horizontal do texto conforme necessário */
+  max-width: 1000px;
+  transform: translate(-512px, -60px); /* Centraliza o texto no meio da imagem */
+color: #fff; /* Cor do texto */
+font-size: 24px; /* Tamanho da fonte do texto */
+font-weight: bold;
+font-family: 'Roboto Condensed', sans-serif;
+}
 
+/*titulo ''biografia''*/
+.biografia{
+  font-size: 25px;
+  border-top: 1px solid #000000;
+  width: 208px;
+  height: 121px;
+  margin: 20px 182px;
+}
+/*mesma fita da biografia só que não tem a barrinha em cima */
+.titulos_pq{
+  font-size: 25px;
+  width: 208px;
+  height: 121px;
+  margin: 20px 182px;
+}
+
+h3.titulos_pq::after{
+  background: white;
+}
+
+.blocofilme{
+  background-color: #f3f3f3;
+}
+/*edita a barra escrito filme*/
+.titulos_filme{
+  padding-top: 9px;
+  padding-left: 250px ;
+  color: white;
+  background-color: #000000;
+  font-size: 25px;
+
+  height: 41px;
+  margin: 113px 0px;
+}
+
+/*conteudo da pagna */
+.conteudo_pagina{
+  font-size: 18px;
+  text-align: justify;
+  word-break: break-word;
+  box-sizing: border-box;
+  width: 853px;
+  height: 201px;
+  margin: -101px 339px;
+ 
+}
+/*imagem da pagina (que esta no texto ) */
+.img_pagina{
+  margin: 95px 288px;
+  max-width: 100%;
+  width:auto;
+  height: auto;
+}
+/*texto de listagem */
+.listada_poderes li{
+  /*list-style-image:url("rec.png");*/
+      text-align: left;
+      font-size: 18px;
+      word-break: break-word;
+      box-sizing: border-box;
+      width: 860px;
+      height: 205px;
+      margin: -117px 371px ;
+ 
+}
+/*texto depois da listagem */
+.texto_db{
+  font-size: 18px;
+  width: 860px;
+  height: 241px;
+  margin: -128px 339px ;
+}
+/*parte onde edita os cartazes*/
+.row_cartazfilmes{
+  width: 70%;
+
+  height: 700px;
+
+  margin: 100px;
+}
+/*edita as imagem */
+.row_cartazfilmes img{
+  position: absolute;
+  width: 288px;     
+  height: 431px;    
+
+}
+/*edita as imagem */
+.img_cartaz{
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 1px rgba(99, 95, 95, 0.801);
+  margin: 30px 123px;
+}
 
 
 /* Fim CSS pagina dos herois */
