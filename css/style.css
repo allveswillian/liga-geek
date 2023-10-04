@@ -150,7 +150,6 @@ article.card {
   font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 1px;
-  font-family: 'open_sansregular';
   margin-bottom: 0;
   display:inline-block;
 }
@@ -412,7 +411,7 @@ h3.titulos_pq::after{
       width: 860px;
       height: 205px;
       margin: -117px 371px ;
- 
+      text-align: justify;
 }
 /*texto depois da listagem */
 .texto_db{
